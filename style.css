@@ -300,7 +300,15 @@ body {
     font-weight: 500;
   }
 
-  .bg
-  {
-    
+  .bg{
+   z-index: -1;
+   filter: blur(0px);
+}
+
+.loading-text{
+  font-size: 50px;
+  color: #fff;
+  position: relative;
+  align-items: center;
+  
 }
