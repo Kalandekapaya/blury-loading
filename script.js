@@ -8,7 +8,6 @@ const scale = (min, in_min, in_max, out_min, out_max) =>{
 
 let load = 0
 let int = setInterval(blurring, 30)
-let non  = scale(load, 0, 100, 1, 0)
 
 function blurring() {
   load++
@@ -16,9 +15,9 @@ function blurring() {
     clearInterval(int)
   }
 
-  loadText.innerText = load + '%'
+  loadText.innerText = load + '%';
   loadText.style.opacity = scale(load, 0, 100, 1, 0);
-  bg.style.filter = "blur(0px + scale(load, 0, 100, 1, 0))"
+  bg.style.filter = "blur("+scale(load, 0, 100, 20, 0)+"px)"
   
 
 }
