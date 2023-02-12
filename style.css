@@ -306,11 +306,14 @@ body {
 }
 
 .loading-text{
+  top: 280px;
   font-size: 50px;
   color: #fff;
-  position: relative;
+  position: absolute;
   align-items: center;
-  height: ;
-  background-color: black;
+  height: 55px;
+  width: 99px;
+  border-radius: 20px;
+  background-color: rgba(0, 0, 0, 0.504);
   
 }
